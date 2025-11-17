@@ -1,0 +1,97 @@
+
+      body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+
+    /* Sidebar links */
+    .sidebar-link {
+      color: #fff !important;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .sidebar-link:hover, .sidebar-link.active {
+      background-color: #0d6efd !important;
+      color: #fff !important;
+    }
+
+    /* Sidebar fixed width */
+    .sidebar {
+      width: 230px;
+    }
+
+    /* Responsive fix for main content */
+    @media (min-width: 992px) {
+      main {
+        margin-left: 230px;
+      }
+    }
+
+    .card {
+      border: none;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* ====== MEDINOV COLOR THEME ====== */
+:root {
+  --medinov-blue: #007b8f; /* main brand color */
+  --medinov-light: #e6f3f4;
+  --medinov-dark: #005f6a;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 3px solid var(--medinov-blue);
+}
+.navbar-brand {
+  color: var(--medinov-blue) !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Sidebar */
+.bg-dark {
+  background-color: var(--medinov-blue) !important;
+}
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: var(--medinov-dark) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--medinov-blue);
+  border-color: var(--medinov-blue);
+}
+.btn-primary:hover {
+  background-color: var(--medinov-dark);
+  border-color: var(--medinov-dark);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+/* Tabs */
+.nav-tabs .nav-link.active {
+  background-color: var(--medinov-blue);
+  color: #fff !important;
+}
+.nav-tabs .nav-link {
+  color: var(--medinov-blue);
+  font-weight: 600;
+}
+
+/* Headings */
+h2, h5 {
+  color: var(--medinov-dark);
+}

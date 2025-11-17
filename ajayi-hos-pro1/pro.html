@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="pro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Top Header -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone me-2"></i>(123) 456-7890 | <i class="bi bi-envelope ms-2 me-1"></i><a href="mailto:info@example.com">info@example.com</a></div>
+      <div>
+        <a href="#"><i class="bi bi-facebook me-3"></i></a>
+        <a href="#"><i class="bi bi-twitter me-3"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+     <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/a clean and professi.png" alt="Medinov Logo" width="55" height="55" class="me-2">
+      <span class="brand-name">Medinov</span>
+    </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2" id="signIn">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#authModal">Login / Signup</button>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="#contact" class="btn contact-btn">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <section class="hero d-flex ">
+  <div class="hero-content text-white">
+    <h1 data-aos="fade-right">WE PROVIDE</h1>
+    <h3 data-aos="fade-right" data-aos-delay="200">TOTAL HEALTH CARE SOLUTION</h3>
+    <p data-aos="fade-right" data-aos-delay="400">
+      See your cardiovascular system in action with our interactive illustrations and animations.
+    </p>
+    <a href="#" class="btn btn-light mt-3" data-aos="fade-up" data-aos-delay="600">
+      Explore the Library
+    </a>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <img src="images/a nurse in a hospita 2.png" class="img-fluid rounded ">
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <h2>About Our Clinic</h2>
+          <p>For over 10 years, we’ve been providing high-quality health care, blending technology, compassion, and excellence in every step of the way.</p>
+          <p>Our mission is to make healthcare accessible, affordable, and efficient through innovation and dedication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service">
+            <i class="bi bi-heart-pulse"></i>
+            <h5>Cardiology</h5>
+            <p>Expert cardiac care with advanced diagnostic and treatment options.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service">
+            <i class="bi bi-bandaid"></i>
+            <h5>Emergency Care</h5>
+            <p>24/7 emergency services with trained medical professionals at your side.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service">
+            <i class="bi bi-eyedropper"></i>
+            <h5>Laboratory Tests</h5>
+            <p>Accurate and fast diagnostic testing to ensure the best treatment decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Section -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <div class="row text-center mb-4" data-aos="fade-up">
+      <h2 class="fw-bold">Contact Us</h2>
+      <p class="text-muted">We’re here to answer your questions and support your health journey.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+        <div class="contact-card p-4 shadow-sm rounded">
+          <i class="bi bi-geo-alt-fill contact-icon"></i>
+          <h5>Our Location</h5>
+          <p>123 Health Street, Lagos</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="contact-card p-4 shadow-sm rounded">
+          <i class="bi bi-telephone-fill contact-icon"></i>
+          <h5>Call Us</h5>
+          <p>(123) 456-7890</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left" data-aos-delay="600">
+        <div class="contact-card p-4 shadow-sm rounded">
+          <i class="bi bi-envelope-fill contact-icon"></i>
+          <h5>Email Us</h5>
+          <p>info@medinov.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 text-center" data-aos="zoom-in" data-aos-delay="800">
+      <div class="social-links">
+        <a href="#"><i class="bi bi-facebook me-3"></i></a>
+        <a href="#"><i class="bi bi-twitter me-3"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="footer-section">
+  <div id="fotter" class="container py-5">
+    <div class="row">
+      <!-- Brand & Tagline -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-brand">Medinov<span>.</span></h4>
+        <p class="">Empowering health, one step at a time.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="">Reach Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> 123 Health Street, Lagos</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> (123) 456-7890</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@medinov.com</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="text-center small">
+      &copy; 2025 Medinov. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <button id="backToTop" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+  </button>
+
+
+
+
+
+<!-- Auth Modal -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4 shadow-lg">
+      <div class="text-center mb-3">
+        <img src="images/a clean and professi.png" alt="Medinov Logo" width="50" class="mb-2">
+        <h5 class="fw-bold">Welcome to Medinov</h5>
+        <p class="text-muted small">Empowering health, one step at a time.</p>
+      </div>
+
+      <!-- Tabs -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="authTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button">Login</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button">Signup</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- Login Form -->
+        <div class="tab-pane fade show active" id="login">
+          <form id="loginForm">
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input type="email" id="loginEmail" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="tab-pane fade" id="signup">
+          <form id="signupForm">
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input type="email" id="signupEmail" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+              <input type="password" id="signupConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration (in ms)
+    once: true      // Run only once when scrolled into view
+  });
+
+  
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.style.display = "flex";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<script src="pro.js"></script>
+
+</body>
+</html>

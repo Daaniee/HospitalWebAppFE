@@ -1,0 +1,424 @@
+  body {
+       font-family: 'Montserrat', sans-serif
+    }
+
+    /* Top bar */
+    .top-bar {
+      background: #007b9e;
+      color: white;
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+       padding-top: 0.1rem;  /* reduce vertical space */
+       padding-bottom: 0.1rem;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #007b9e;
+      font-size: 1.9rem;
+      font-family: 'Concert One', sans-serif;
+    }
+
+    .navbar-brand span {
+      color: #333;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url('images/WhatsApp\ Image\ 2025-10-28\ at\ 13.17.56_53313f58.jpg') center/cover no-repeat;
+      color: white;
+      text-align: left;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 83, 107, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 0 20px;
+      margin-left: 50px;
+    }
+
+    .hero h1 {
+      font-weight: 800;
+      font-size: 3rem;
+      width: 350px;
+      margin-bottom: 20px;
+    }
+
+    .hero h3 {
+      font-weight: 600;
+      width: 85%; 
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .btn {
+  background: linear-gradient(135deg, #00bcd4, #007b9e); /* gradient for depth */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;       /* pill shape */
+  padding: 12px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.hero .btn:hover {
+  background: linear-gradient(135deg, #007b9e, #005f77); /* darker hover gradient */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+
+    .btn-theme {
+      background-color: #007b9e;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-theme:hover {
+      background-color: #005f77;
+      color: white;
+    }
+
+    /* About Section */
+    #about {
+      padding: 80px 0;
+    }
+
+    #about h2 {
+      color: #007b9e;
+      font-weight: bold;
+    }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333; /* default */
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #005f77 !important;
+}
+
+.contact-section {
+  background: #222; /* dark charcoal */
+  color: #fff;
+}
+.contact-card {
+  background: #333;
+  border-top: 4px solid #00bcd4;
+}
+.contact-icon {
+  color: #00bcd4;
+}
+
+
+    #about p {
+      color: #555;
+    }
+
+    /* Services */
+    .service {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      transition: all 0.3s ease;
+    }
+
+    .service:hover {
+      background-color: #e3f4f9;
+      transform: translateY(-5px);
+    }
+
+    .service i {
+      font-size: 2.5rem;
+      color: #007b9e;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #007b9e;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    #footer-text {
+      margin: 0;
+    }
+    
+
+/* Only affect small screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;       /* narrow dropdown */
+    z-index: 999;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;   /* smaller headline */
+    width: auto;         /* let it fit naturally */
+    background-color: transparent; /* optional: remove block background */
+  }
+
+  .hero h3 {
+    font-size: 1.2rem;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 0;       /* center it instead of left */
+    text-align: center;   /* align text nicely */
+    padding-top: 60%;     /* push text lower so it sits below the face */
+  }
+}
+@media (max-width: 768px) {
+  .hero .btn {
+    display: inline-block;
+    margin: 1rem auto 0;
+  }
+}
+
+/* Change hamburger dropdown background */
+/* Default hamburger dropdown (top of page) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff; /* white when at top */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .navbar-collapse .nav-link {
+    color: #333 !important; /* dark text on white */
+  }
+
+  /* When navbar is scrolled */
+  .navbar.scrolled .navbar-collapse {
+    background-color: #007b9e; /* teal when scrolled */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+
+  .navbar.scrolled .navbar-collapse .nav-link {
+    color: #fff !important; /* white text on teal */
+  }
+  
+
+  .navbar.scrolled .navbar-collapse .nav-link:hover {
+    color: #e3f4f9 !important;
+  }
+
+  #signIn{
+  margin-bottom: 1vh;
+}
+}
+
+/* Default button (top of page) — teal background */
+.contact-btn {
+  background-color: #007b9e;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* When navbar is scrolled — white background, teal text */
+.navbar.scrolled .contact-btn {
+  background-color: #fff;
+  color: #007b9e;
+  border: 2px solid #007b9e;
+}
+
+.navbar.scrolled .contact-btn:hover {
+  background-color: #e3f4f9;
+  color: #005f77;
+}
+
+/* Default navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+/* Scrolled state */
+.navbar.scrolled {
+  background: #007b9e; /* brand color */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar.scrolled .nav-link {
+  color: #fff !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: #fff !important;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #007b9e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #005f77;
+}
+
+.footer-section {
+  background: linear-gradient(135deg, #f8f9fa, #e3f4f9);
+  color: #333;
+}
+
+.footer-section h4.footer-brand {
+  font-family: 'Concert One', sans-serif;
+  font-size: 2rem;
+  color: #007b9e;
+}
+
+.footer-section h4.footer-brand span {
+  color: #007b9e;
+}
+
+.footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #007b9e;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  margin-right: 15px;
+   color: #007b9e;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
+.footer-divider {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 30px 0 15px;
+}
+
+
+#fotter{
+  padding-bottom: 0px!important;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+.nav-tabs .nav-link {
+  font-weight: 600;
+}
+
+
+.modal-content {
+  border-radius: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-pills .nav-link {
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: 600;
+  color: #007b9e;
+  background-color: #e3f4f9;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007b9e;
+  color: #fff;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  opacity: 0.9;
+}
